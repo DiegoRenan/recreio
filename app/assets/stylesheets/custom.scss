@@ -1,1 +1,46 @@
 @import "bootstrap";
+
+/*h1{
+	color: #3d3d3f;
+}*/
+
+body{
+	font-family: 'Roboto';
+	color: #5F5F5F;
+}
+
+/*########################################################################
+#                               HEADER                                 #
+########################################################################*/
+nav.bg-header ul li a{
+	color: #5F5F5F !important;
+	font-size: 1.2rem;	
+	margin: 0 0.7rem 0 0.7rem;
+}
+nav.bg-header ul li{
+	a:hover{
+		color: #DEB666 !important;;
+	}
+}
+
+nav.navbar-nav.nav-item.nav-link ul li a{
+	margin: 5rem;
+}
+
+.navbar-brand{
+	color: #696969 !important;
+	font-size: 2rem;
+}
+
+.bg-header{
+	background-color: #FFFFFF;
+}
+
+/*########################################################################
+#                               BUTTON                                 #
+########################################################################*/
+
+.btn.btn-reservas{
+	color: #FFFFFF !important;
+	background-color: #DEB666;
+}

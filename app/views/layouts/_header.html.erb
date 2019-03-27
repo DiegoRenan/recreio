@@ -1,0 +1,36 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-header">
+  <div class="container ">
+    <%= link_to "Cháraca Recreio", root_path, class: "navbar-brand" %>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+            	<%= link_to "HOME", root_path, class: "nav-link" %>
+            </li>
+            <li class="nav-item active">
+              <%= link_to "SERVIÇOS", "#", class: "nav-link" %>
+            </li>
+            <li class="nav-item active">
+              <%= link_to "LOCALIZAÇÃO", "#", class: "nav-link" %>
+            </li>
+            <li class="nav-item active">
+              <%= link_to "GALERIA", "#", class: "nav-link" %>
+            </li>
+            <li class="nav-item active">
+              <%= link_to "CONTATO", static_pages_contact_path, class: "nav-link" %>
+            </li>
+            <div class="nav-item active">
+              <%= link_to " RESERVAS ONLINE", static_pages_about_path, class: "far fa-calendar-alt btn btn-reservas nav-link" %>
+            </div>          
+        </ul>
+
+    </div>
+  </div>
+</nav>
