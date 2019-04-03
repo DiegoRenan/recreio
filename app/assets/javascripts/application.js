@@ -10,6 +10,10 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require moment
+//= require tempusdominus-bootstrap-4.js 
+//= require jquery-ui
+//= require moment
 //= require jquery3
 //= require popper
 //= require bootstrap
@@ -17,3 +21,16 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+$(function () {
+    $('#datetimepicker7').datetimepicker();
+    $('#datetimepicker8').datetimepicker({
+        useCurrent: false
+    });
+    $("#datetimepicker7").on("change.datetimepicker", function (e) {
+        $('#datetimepicker8').datetimepicker('minDate', e.date);
+    });
+    $("#datetimepicker8").on("change.datetimepicker", function (e) {
+        $('#datetimepicker7').datetimepicker('maxDate', e.date);
+    });
+});

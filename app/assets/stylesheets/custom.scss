@@ -1,4 +1,6 @@
 @import "bootstrap";
+@import "tempusdominus-bootstrap-4.css";
+
 
 /*h1{
 	color: #3d3d3f;
@@ -7,6 +9,7 @@
 body{
 	font-family: 'Roboto';
 	color: #5F5F5F;
+	position: relative;
 }
 
 /*########################################################################
@@ -34,6 +37,7 @@ nav.navbar-nav.nav-item.nav-link ul li a{
 
 .bg-header{
 	background-color: #FFFFFF;
+	box-shadow: 2px 2px 8px #888888;
 }
 
 /*########################################################################
@@ -43,4 +47,100 @@ nav.navbar-nav.nav-item.nav-link ul li a{
 .btn.btn-reservas{
 	color: #FFFFFF !important;
 	background-color: #DEB666;
+}
+
+.btn-reservas:hover{
+	background-color: #B69854 !important;
+}
+
+.btn.btn-mais{
+	color: #DEB666 !important;
+	background-color: #FFFFFF !important;
+	border:1px solid #DEB666 !important;
+}
+
+.btn-mais:hover{
+	color: #FFFFFF !important;
+	background-color: #DEB666 !important;
+}
+
+
+
+/*########################################################################
+#                               BOOK                                 #
+########################################################################*/
+
+.book{
+	position: absolute;
+	top: 50%;
+	left: 7%;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	background-color: #FFFFFF;
+	border-radius: 8px;
+	width: 100%;	
+	margin: 0 auto;
+	box-shadow: 1px 1px 6px #888888;
+	z-index: 2;
+}
+
+/*########################################################################
+#                               ABOUT                                   #
+########################################################################*/
+
+#about{
+	position: relative;
+	padding-top: 6rem;
+	padding-bottom: 6rem;
+	color: #808080;
+}
+
+article{
+	color: #858A99;
+	font-family: 'Lato', sans-serif;
+}
+
+.img-about-1{
+	position: absolute;
+	z-index: 3;
+	box-shadow: 1px 1px 6px #888888;
+	-webkit-filter: blur(0.5px); /* Safari 6.0 - 9.0 */
+  	filter: blur(0.5px);
+} 
+
+.img-about-2{
+	position: absolute;
+	right: 5%;
+	top: 50%;
+	z-index: -1;
+	box-shadow: 1px 1px 6px #888888;
+	-webkit-filter: blur(0.5px); /* Safari 6.0 - 9.0 */
+  	filter: blur(0.5px);
+} 
+
+/*########################################################################
+#                               SPACE                                   #
+########################################################################*/
+
+.space{
+	position: absolute;
+	min-height: 25rem;
+}
+
+
+/*########################################################################
+#                               SERVICES                                #
+########################################################################*/
+
+#services{
+	position: relative;
+	background-color: #F5F3F0;
+	padding-top: 6rem;
+	padding-bottom: 6rem;
+}
+
+#services .card{
+	height: 5rem;
+	margin-bottom: 1rem;
+	background-color: transparent !important;
 }
