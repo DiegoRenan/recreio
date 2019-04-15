@@ -1,0 +1,27 @@
+<div class="container" id="check">
+<p id="notice"></p>
+
+<% flash.each do |message_type, message| %>
+  <div class="alert alert-<%= message_type %>"><%= message %></div>
+<% end %>
+
+<h2><center>Você pode escolher uma nova data:</center></h2>
+
+<br/> 
+
+<%= render 'checks/form', check: @novo_check%>
+
+<br/>
+<h2>
+	<center>
+		Nosso calendário de eventos:
+	</center>
+</h2>
+
+<div class="container">
+	<%= month_calendar(attribute: @check.checkin.to_s)do |date| %>
+		<h2><%= date%></h2>
+	<% end %>
+</div>
+
+</div>

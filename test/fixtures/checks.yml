@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  checkin: 2019-04-08 11:57:25
+  checkout: 2019-04-08 11:57:25
+  days: 1
+
+two:
+  checkin: 2019-04-08 11:57:25
+  checkout: 2019-04-08 11:57:25
+  days: 1

@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Checkin:</strong>
+  <%= @contract.checkin %>
+</p>
+
+<p>
+  <strong>Checkout:</strong>
+  <%= @contract.checkout %>
+</p>
+
+<p>
+  <strong>Parcelado:</strong>
+  <%= @contract.parcelado %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @contract.status %>
+</p>
+
+<p>
+  <strong>Day payment:</strong>
+  <%= @contract.day_payment %>
+</p>
+
+<p>
+  <strong>Valor:</strong>
+  <%= @contract.valor %>
+</p>
+
+<p>
+  <strong>Valor total:</strong>
+  <%= @contract.valor_total %>
+</p>
+
+<p>
+  <strong>Desconto:</strong>
+  <%= @contract.desconto %>
+</p>
+
+<p>
+  <strong>Contract models:</strong>
+  <%= @contract.contract_models %>
+</p>
+
+<%= link_to 'Edit', edit_contract_path(@contract) %> |
+<%= link_to 'Back', contracts_path %>

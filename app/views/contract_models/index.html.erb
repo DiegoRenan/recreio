@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Contract Models</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Body</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @contract_models.each do |contract_model| %>
+      <tr>
+        <td><%= contract_model.title %></td>
+        <td><%= contract_model.body %></td>
+        <td><%= link_to 'Show', contract_model %></td>
+        <td><%= link_to 'Edit', edit_contract_model_path(contract_model) %></td>
+        <td><%= link_to 'Destroy', contract_model, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Contract Model', new_contract_model_path %>

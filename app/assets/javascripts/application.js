@@ -17,6 +17,8 @@
 //= require jquery3
 //= require popper
 //= require bootstrap
+//= require summernote/summernote.min
+//= require summernote-init
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks

@@ -1,5 +1,8 @@
 @import "bootstrap";
 @import "tempusdominus-bootstrap-4.css";
+@import "summernote-bs4";
+@import "summernote-custom-theme.min";
+@import "simple_calendar";
 
 
 /*h1{
@@ -10,6 +13,7 @@ body{
 	font-family: 'Roboto';
 	color: #5F5F5F;
 	position: relative;
+	padding-top: 1rem;
 }
 
 /*########################################################################
@@ -17,8 +21,8 @@ body{
 ########################################################################*/
 nav.bg-header ul li a{
 	color: #5F5F5F !important;
-	font-size: 1.2rem;	
-	margin: 0 0.7rem 0 0.7rem;
+	font-size: 1rem;	
+	margin: 0 0.4rem 0 0.4rem;
 }
 nav.bg-header ul li{
 	a:hover{
@@ -72,12 +76,11 @@ nav.navbar-nav.nav-item.nav-link ul li a{
 
 .book{
 	position: absolute;
-	top: 50%;
+	bottom: 2rem;
 	left: 7%;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0;
 	background-color: #FFFFFF;
-	border-radius: 8px;
 	width: 100%;	
 	margin: 0 auto;
 	box-shadow: 1px 1px 6px #888888;
@@ -143,4 +146,46 @@ article{
 	height: 5rem;
 	margin-bottom: 1rem;
 	background-color: transparent !important;
+}
+
+.box{
+	border: 1px #858A99 solid;
+	margin: 0.7rem;
+	padding: .3rem;
+	cursor: pointer;
+}
+
+.box:active{
+	background-color: #333333;
+	color: #FFFFFF;
+}
+
+.box.active{
+	background-color: #333333;
+	color: #FFFFFF;
+}
+
+/*########################################################################
+#                               LOCALIZAÇÃO                              #
+########################################################################*/
+
+#localizacao{
+	padding: 2rem;
+}
+
+/*########################################################################
+#                               EVENTS                                   #
+########################################################################*/
+
+#events{
+	background-color: #F1F0ED;
+	padding: 5rem;
+}
+
+/*########################################################################
+#                               CHECK                                 #
+########################################################################*/
+
+#check{
+	padding-top: 5rem;
 }

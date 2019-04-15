@@ -1,44 +1,5 @@
 <div class="container book">
 	<div class="container">
-		<div class="row">
-			<label class='col-md-3'><h5>De:</h5></label>
-			<label class='col-md-3'><h5>Até:</h5></label>
-			<label class='col-md-2'></label>
-			<label class='col-md-4'></label>
-		</div>
-		<div class="row">
-		    <div class='col-md-3'>
-		        <div class="form-group">
-		           <div class="input-group date" id="datetimepicker7" data-target-input="nearest">
-		                <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker7"/>
-		                <div class="input-group-append" data-target="#datetimepicker7" data-toggle="datetimepicker">
-		                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
-		                </div>
-		            </div>
-		        </div>
-		    </div>
-		    <div class='col-md-3'>
-		        <div class="form-group">
-		           <div class="input-group date" id="datetimepicker8" data-target-input="nearest">
-		                <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker8"/>
-		                <div class="input-group-append" data-target="#datetimepicker8" data-toggle="datetimepicker">
-		                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
-		                </div>
-		            </div>
-		        </div>
-		    </div>
-		    <div class='col-md-2'>
-		        <div class="form-group">
-		           <div class="input-group date" data-target-input="nearest">
-		                <input type="number" class="form-control datetimepicker-input" data-target="#datetimepicker8"/>
-		            </div>
-		        </div>
-		    </div>
-		    <div class="col-md-4">
-			    <div class="">
-	              <%= link_to " VERFICAR DISPONIBILIDADE", static_pages_about_path, class: " btn btn-reservas nav-link" %>
-	            </div>
-		    </div>
-		</div>
+		<%= render 'checks/form', check: @check%>
 	</div>
 </div>

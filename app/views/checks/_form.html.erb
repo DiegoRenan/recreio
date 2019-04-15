@@ -1,0 +1,47 @@
+<%= form_with(model: check, local: true) do |form| %>
+  <%= render 'shared/error_messages', object: form.object %>
+
+  <div class="row">
+      <label class='col-md-3'><h5>De:</h5></label>
+      <label class='col-md-3'><h5>Até:</h5></label>
+      <label class='col-md-2'>Quantos dias?</label>
+      <label class='col-md-4'></label>
+  </div>
+
+  <div class="row">
+    
+    <div class='col-md-3'>
+      <div class="form-group">
+        <div class="input-group date" id="datetimepicker7" data-target-input="nearest">
+
+          <%= datepicker_input form, :checkin%>
+
+        </div>
+      </div>
+    </div>
+
+    <div class='col-md-3'>
+      <div class="form-group">
+        <div class="input-group date" id="datetimepicker8" data-target-input="nearest">
+
+          <%= datepicker_input form, :checkout%>
+        </div>
+      </div>
+    </div>
+
+    <div class='col-md-2'>
+      <div class="form-group">
+         <div class="input-group date" data-target-input="nearest">
+            <%= form.number_field :days, class: "form-control datetimepicker-input", 'data-target'=>"#datetimepicker8", min: 1, value: 1 %>
+          </div>
+      </div>
+    </div>
+    
+    <div class="col-md-4">
+      <div class="actions">
+        <%= form.submit " VERFICAR DISPONIBILIDADE", class: " btn btn-reservas nav-link" %>
+      </div>
+    </div>
+
+  </div>
+<% end %>

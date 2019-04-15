@@ -1,0 +1,62 @@
+<%= form_with(model: contract, local: true) do |form| %>
+  <% if contract.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(contract.errors.count, "error") %> prohibited this contract from being saved:</h2>
+
+      <ul>
+      <% contract.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :checkin %>
+    <%= form.datetime_select :checkin %>
+  </div>
+
+  <div class="field">
+    <%= form.label :checkout %>
+    <%= form.datetime_select :checkout %>
+  </div>
+
+  <div class="field">
+    <%= form.label :parcelado %>
+    <%= form.number_field :parcelado %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status %>
+    <%= form.text_field :status %>
+  </div>
+
+  <div class="field">
+    <%= form.label :day_payment %>
+    <%= form.number_field :day_payment %>
+  </div>
+
+  <div class="field">
+    <%= form.label :valor %>
+    <%= form.text_field :valor %>
+  </div>
+
+  <div class="field">
+    <%= form.label :valor_total %>
+    <%= form.text_field :valor_total %>
+  </div>
+
+  <div class="field">
+    <%= form.label :desconto %>
+    <%= form.text_field :desconto %>
+  </div>
+
+  <div class="field">
+    <%= form.label :contract_models_id %>
+    <%= form.text_field :contract_models_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Contracts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Checkin</th>
+      <th>Checkout</th>
+      <th>Parcelado</th>
+      <th>Status</th>
+      <th>Day payment</th>
+      <th>Valor</th>
+      <th>Valor total</th>
+      <th>Desconto</th>
+      <th>Contract models</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @contracts.each do |contract| %>
+      <tr>
+        <td><%= contract.checkin %></td>
+        <td><%= contract.checkout %></td>
+        <td><%= contract.parcelado %></td>
+        <td><%= contract.status %></td>
+        <td><%= contract.day_payment %></td>
+        <td><%= contract.valor %></td>
+        <td><%= contract.valor_total %></td>
+        <td><%= contract.desconto %></td>
+        <td><%= contract.contract_models %></td>
+        <td><%= link_to 'Show', contract %></td>
+        <td><%= link_to 'Edit', edit_contract_path(contract) %></td>
+        <td><%= link_to 'Destroy', contract, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Contract', new_contract_path %>

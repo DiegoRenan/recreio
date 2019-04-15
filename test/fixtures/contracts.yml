@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  checkin: 2019-04-08 11:28:33
+  checkout: 2019-04-08 11:28:33
+  parcelado: 1
+  status: MyString
+  day_payment: 1
+  valor: 
+  valor_total: 
+  desconto: 1.5
+  contract_models: one
+
+two:
+  checkin: 2019-04-08 11:28:33
+  checkout: 2019-04-08 11:28:33
+  parcelado: 1
+  status: MyString
+  day_payment: 1
+  valor: 
+  valor_total: 
+  desconto: 1.5
+  contract_models: two
