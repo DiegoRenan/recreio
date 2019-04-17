@@ -2,7 +2,6 @@
 @import "tempusdominus-bootstrap-4.css";
 @import "summernote-bs4";
 @import "summernote-custom-theme.min";
-@import "simple_calendar";
 
 
 /*h1{
@@ -74,17 +73,29 @@ nav.navbar-nav.nav-item.nav-link ul li a{
 #                               BOOK                                 #
 ########################################################################*/
 
-.book{
-	position: absolute;
-	bottom: 2rem;
-	left: 7%;
-	padding-top: 0.5rem;
-	padding-bottom: 0;
+#book{
+	position: relativo;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
 	background-color: #FFFFFF;
+	color: #808080;
 	width: 100%;	
 	margin: 0 auto;
-	box-shadow: 1px 1px 6px #888888;
-	z-index: 2;
+}
+
+/*########################################################################
+#                               CALENDAR                                #
+########################################################################*/
+
+#calendar{
+	position: relativo;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	padding-bottom: 0;
+	background-color: #FFFFFF;
+	color: #808080;
+	width: 100%;	
+	margin: 0 auto;
 }
 
 /*########################################################################
@@ -188,4 +199,15 @@ article{
 
 #check{
 	padding-top: 5rem;
+	padding-bottom: 5rem;
+
+	.card{
+		z-index: 2;
+		box-shadow: 0 0 1em #E9ECEF;
+		padding: 0.5rem;
+	}
+}
+
+.day-free{
+	background: #C3E6CB;
 }

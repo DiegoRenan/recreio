@@ -10,7 +10,6 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require moment
 //= require tempusdominus-bootstrap-4.js 
 //= require jquery-ui
 //= require moment

@@ -22,7 +22,6 @@ gem 'jquery-ui-rails'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'bootstrap4-datetime-picker-rails'
 gem 'summernote-rails', '~> 0.8.10.0'
-gem 'simple_calendar', '~> 2.0'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

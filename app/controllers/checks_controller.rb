@@ -12,6 +12,8 @@ class ChecksController < ApplicationController
     @busies = Busy.all
     @novo_check = Check.new
     
+    @date = params[:checkin] ? Date.parse(params[:checkin]) : Date.today
+
     if !@busies.busy?(@check.checkin)
       flash.now[:success] = "A data #{@check.checkin.strftime("%d/%m/%Y")} é está disponível para reserva!"
     else
