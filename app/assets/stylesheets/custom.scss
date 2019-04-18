@@ -211,3 +211,24 @@ article{
 .day-free{
 	background: #C3E6CB;
 }
+
+/*########################################################################
+#                               DISCOUNT                                 #
+########################################################################*/
+#discount{
+	background-color: #FFF;
+}
+.circle{
+	background-image: url(circle2.png) ;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-size: 8rem;
+	width: 240px;
+	z-index: 5;
+	box-shadow: 0 0 1em #E9ECEF;
+}
+
+	
